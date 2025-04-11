@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="guardar.php" method="post">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required minlength="3" maxlength="20">
+            <hr>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingrese apellido" value="Torres">
+            <hr>
+            <label for="documento">Documento</label>
+            <input type="number" name="documento" min="1000000" max="1000010">
+            <hr>
+            <label for="fecha_nac">Fecha Nacimiento</label>
+            <input type="date" name="fecha_nac" min="2025-04-15" value="2025-04-16">
+            <hr>
+            <label for="fechahora_nac">Fecha y Hora Nacimiento</label>
+            <input type="datetime-local" name="fechahora_nac">
+            <hr>
+            <label for="hora_nac">Hora Nacimiento</label>
+            <input type="time" name="hora_nac">
+            <hr>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <hr>
+            <label for="password">Clave</label>
+            <input type="password" name="password">
+            <hr>
+            <label for="archivo">Foto</label>
+            <input type="file" name="archivo" accept=".pdf,.docx">
+            <hr>
+            <label>Titulo</label>
+            <br>
+            <label for="titulo_sis">Sistemas</label>
+            <input type="radio" name="titulo" id="titulo_sis" value="sis">
+            <br>
+            <label for="titulo_tur">Turismo</label>
+            <input type="radio" name="titulo" id="titulo_tur" value="tur">
+            <br>
+            <label for="titulo_cont">Contable</label>
+            <input type="radio" name="titulo" id="titulo_cont" value="cont">
+            <br>
+            <label>
+                Otro
+                <input type="radio" name="titulo" value="otro" checked>
+            </label>
+            <hr>
+            <label>Titulo</label>
+            <br>
+            <label for="titulo_sis2">Sistemas</label>
+            <input type="checkbox" name="titulo2" id="titulo_sis2" value="sis">
+            <br>
+            <label for="titulo_tur2">Turismo</label>
+            <input type="checkbox" name="titulo2" id="titulo_tur2" value="tur">
+            <br>
+            <label for="titulo_cont2">Contable</label>
+            <input type="checkbox" name="titulo2" id="titulo_cont2" value="cont">
+            <br>
+            <label>
+                Otro
+                <input type="checkbox" name="titulo2" value="otro" checked>
+            </label>
+            <hr>
+            <label for="carrera">Carrera</label>
+            <select name="carerra" id="carrera">
+                <option value="">Seleccione...</option>
+                <option value="sis">Sistemas</option>
+                <option value="tur">Turismo</option>
+                <option value="cont">Contabilidad</option>
+            </select>
+            <hr>
+            <label for="datos">Datos</label>
+            <textarea name="datos" id="datos"></textarea>
+            <hr>
+            <button type="submit">Guardar</button>
+        </div>
+    </form>
+</body>
+</html>
