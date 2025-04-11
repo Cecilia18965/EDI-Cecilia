@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        *{ /*LO COLOCO SIMPRE AL INICIO DE LA CONFIGURACION DE CSS. es un estilo que le aplica a todos los elementos*/
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root{
+            font-size: 16px;
+            --rojo: white;
+        }
+        body{
+            background: var(--rojo);
+        }
+        div{
+            background: yellow;
+        }
+
+        #azul{ /*id unico*/
+            height: 100px;
+            background: #ff0258;
+        }
+
+        .purple{ /*clases*/
+            height: 100px; /*ANCHO*/
+            width: 100px;
+            color: white; /*color de texto*/
+            font-size: 20px; /*em*/
+            background: /*rgb(40,75,90)*/ rgba(40,75,90,0.5); /*fondo */
+            text-align: left; /*ALINEACIÓN*/
+            /*margin: 5px;*/
+            border: solid black 2px;
+            padding: 20px; /*Padding es la separacion hacia dentro*/
+            display: inline-block; /*los trata como bloques uno al lado del otro*/
+            
+        }
+    </style>
+
+</head>
+    <body>
+        <div  style="background: orange;"> <!--Solo se usa en java-->
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit veniam maxime dolorum culpa autem dolore nam magnam numquam vero dignissimos suscipit labore amet eaque optio quae, omnis placeat dolor voluptatum.
+        </div>
+
+        <div>Prueba</div>
+
+        <div id="azul"> a </div>
+
+        <div class="purple"> b </div> <!--Aplico la clase cuando se que se va a repetir varias veces-->
+
+        <div class="purple"> c </div> <!--Aplico la clase cuando se que se va a repetir varias veces-->
+
+    </body>
+</html>

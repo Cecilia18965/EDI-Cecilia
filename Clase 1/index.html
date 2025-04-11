@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDI WEB</title>
-    <link rel = "style sheet" href="css/style.css">
+    <link rel = "style sheet" href="css/style.css"> <!--si esta en una carpeta espeficar con un css/-->
 
-    <style>
+   <style>
         table,th,td{
             border: 1px solid black;
             border-collapse: collapse;
@@ -14,63 +14,71 @@
     </style>
 
 </head>
-<body>
-    <H1>Titulo 1</H1>
-    <h2>Titulo 2</h2>
-    <h3>Titulo 3</h3>
+    <body> <!-- aca va el contenido -->
+        <!-- Etiquetas de texto-->
+        <h1> Titulo 1</h1>
+        <h2> Titulo 2</h2>
+        <h3> Titulo 3</h3>
+        <h4> Titulo 4</h4>
+        <h5> Titulo 5</h5>
 
-    <hr> <!--Linea divisoria-->
+        <hr> <!--Linea divisoria-->
 
-    <span>Texto prueba</span>
-    <strong>Texto prueba</strong> <!--Texto en negrita-->
-    <small>Texto prueba</small> <!--Texto pequeño-->
-    <b>Texto prueba</b> 
-    <del>Texto prueba</del> <!--Texto rayado-->
-    <mark>Texto prueba</mark> <!--Texto marcado-->
+        <span>Texto prueba</span>
+        <strong>Texto prueba</strong> <!--Texto en negrita-->
+        <small>Texto prueba</small> <!--Texto pequeño-->
+        <b>Texto prueba</b> 
+        <del>Texto prueba</del> <!--Texto rayado-->
+        <mark>Texto prueba</mark> <!--Texto marcado-->
+        <span>Text </br><b>Prueba</b></span>
+        <hr>
+        
+        <br> <!-- Salto de línea "solo en párrafos" -->
+        <p>Lorem ipsum <span>dolor</span> sit amet consectetur adipisicing elit. Dolorem hic, impedit repellendus cum incidunt nostrum. <mark>Tempora</mark>, <strong>repudiandae maiores</strong>  dicta perspiciatis, quam enim corporis hic, <br>illo optio consequatur odit possimus est?</p>
 
-    <br> <!-- Salto de línea "solo en párrafos" -->
-    <p>Lorem ipsum <span>dolor</span> sit amet consectetur adipisicing elit. Dolorem hic, impedit repellendus cum incidunt nostrum. <mark>Tempora</mark>, <strong>repudiandae maiores</strong>  dicta perspiciatis, quam enim corporis hic, <br>illo optio consequatur odit possimus est?</p>
+        <table>
+            <thead>
+                <tr> <!-- Columna -->
+                    <th>Alumno</th> <!--Encabezado-->
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Documento</th>
+                </tr>
+                <tr>
+                    <th colspan="4">Cursando</th>
+                </tr>
+            </thead>
+            <tbody id="alumnos">
+                <tr>
+                    <td>1</td>
+                    <td>Cecilia</td>
+                    <td>Acevedo</td>
+                    <td>38852654</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Analia</td>
+                    <td>Molina</td>
+                    <td>39542102</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Leandro</td>
+                    <td>Gomez</td>
+                    <td>38471120</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Cantidad de Alumnos: 3</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <!--Lo escribimos debajo de todo el código-->
+        <script src="script.js"></script>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IcrbM1l_BoI?si=jIkP4OPXotnATNIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>             
+        
 
-    <table>
-        <thead>
-            <tr> <!-- Columna -->
-                <th>Alumno</th> <!--Encabezado-->
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>Documento</th>
-            </tr>
-            <tr>
-                <th colspan="4">Cursando</th>
-            </tr>
-        </thead>
-        <tbody id="alumnos">
-            <tr>
-                <td>1</td>
-                <td>Cecilia</td>
-                <td>Acevedo</td>
-                <td>38852654</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Analia</td>
-                <td>Molina</td>
-                <td>39542102</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Leandro</td>
-                <td>Gomez</td>
-                <td>38471120</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="4" id="cantidadAlumnos">Cantidad de Alumnos: 0</td>
-            </tr>
-        </tfoot>
-    </table>
-
-    <!--Lo escribimos debajo de todo el código-->
-    <script src="script.js"></script>
-</body>
+    </body>
 </html>

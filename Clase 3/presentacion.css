@@ -1,0 +1,34 @@
+*{ /*LO COLOCO SIMPRE AL INICIO DE LA CONFIGURACION DE CSS. es un estilo que le aplica a todos los elementos*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif; 
+    background: linear-gradient(to right,#667eea, #764ba2);
+    color:white;
+    height: 100vh;/*se pone vh cuando quiero poner el alto en base al navegador*/
+    display: flex; /*esto se pone para alinear verticarmente*/
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 10px 20px rgb(0,0,0,0.3);/*PARA HACER SOMBRA*/
+    text-align: center;
+}
+
+.avatar{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ffff;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
