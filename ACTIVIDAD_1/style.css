@@ -1,0 +1,112 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, rgba(80, 31, 90, 1) 0%, rgba(194, 100, 155, 0.85) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tarjeta principal */
+.card {
+    position: relative;
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 40px;
+    width: 500px;
+    height: 450px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Círculo decorativo */
+.circle {
+    position: absolute;
+    top: -175px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 450px;
+    height: 300px;
+    background: #c2649b;
+    border-radius: 50%;
+    z-index: 0; /*Posición visual: Se ve atrás del todo*/
+}
+
+/* Foto de perfil */
+.profile-pic {
+    position: relative;
+    margin-top: 0px;
+    z-index: 1; /*Posición visual: Se ve adelante*/
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+/* Descripción */
+.description {
+    margin-top: 9px;
+    z-index: 1; /*Posición visual: Se ve adelante*/
+    position: relative;
+}
+
+.description h3 {
+    font-size: 24px;
+    color: #271539;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 15px;
+    color: #555;
+    margin: 0 10px 20px;
+}
+
+/* Tecnologías */
+.tech {
+    margin: 20px 0;
+}
+
+.tech span {
+    display: inline-block;
+    background-color: #c2649b;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* Botones de contacto */
+.contact {
+    margin-top: 10px;
+}
+
+.contact a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 10px 20px;
+    color: #501f5a;
+    border: 2px solid #501f5a;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.contact a:hover {
+    background-color: #c2649b;
+    color: white;
+}

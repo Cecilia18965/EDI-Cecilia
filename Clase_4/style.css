@@ -1,0 +1,106 @@
+.caja{
+    display: block;
+    height: 100px;
+    width: 200px;
+    background: orange;
+}
+
+.linea{
+    display: inline; /*INLINE no me permite poner alto y ancho*/
+    background: purple;
+}
+
+.linea-bloque{ 
+    display: inline-block; /*toma el contenido y me permite poner alto y ancho*/
+    height: 100px;
+    width: 200px;
+    background: rgb(40, 200, 228);
+}
+
+.flex{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.flex .flex-item {
+    flex: 1;
+    background: yellow;
+    height: 100px;
+
+}
+
+.flex .flex-item.doble{
+    flex: 2;
+}
+
+.flex.vertical {
+    flex-direction: column;
+}
+.flex.vertical .flex-item {
+    flex: unset; /*Le quitamos el flex con unset "reseteamos"*/
+    width: 100px;
+}
+
+.flex-justify {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /*horizontal en row - vertical en colum*/
+    align-items: center; /*vertical en row - horizontal en colum*/
+    height: 200px;
+    gap: 10px;
+    background: orange;
+}
+
+.flex-justify .flex-item {
+    height: 100px;
+    width: 100px;
+    background: rgb(134, 14, 74);
+}
+
+.medidas, .medidas li {
+    display: block;
+    margin-top: 10px;
+}
+
+.medidas li {
+    height: 100px;
+    background: peru;
+}
+
+.medidas li.px{
+    width: 200px;
+}
+
+.medidas li.por{
+    width: 50px;
+}
+
+.medidas li.em{
+    font-size: 20px;
+    width: 2em; /*Se ajusta al tamaño de letra*/
+}
+:root {
+    font-size: 20px;
+}
+
+.medidas li.rem{
+    font-size: 40px;
+    width: 2rem; /*Se ajusta al tamaño de letra*/
+}
+
+.mouse {
+    display: flex;
+    gap: 10px;
+}
+
+.mouse .mouse-items {
+    flex: 1;
+    background: gold;
+    height: 100px;
+}
+
+.mouse .mouse-items:hover:not(:last-child){
+    cursor: pointer;
+    background: hotpink;
+}

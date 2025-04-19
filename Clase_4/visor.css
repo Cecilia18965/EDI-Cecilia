@@ -1,0 +1,37 @@
+*{ /*LO COLOCO SIEMPRE AL INICIO DE LA CONFIGURACION DE CSS. es un estilo que le aplica a todos los elementos*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1a252c;
+}
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+.container .box {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.container .box  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
