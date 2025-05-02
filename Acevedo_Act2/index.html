@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
+
+<html lang="es"> 
+<!-- Etiqueta raíz del documento con idioma español -->
+
+<head> 
+    <meta charset="UTF-8">  
+    <!-- Establece la codificación de caracteres como UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que el diseño sea adaptable a dispositivos móviles -->
+
+    <title>Alma Mia</title>  
+    <!-- Título de la pestaña del navegador -->
+
+    <link rel="icon" href="img/Logo_.png" type="image/png">
+    <!-- Título de la pestaña del navegador -->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--BIBLIOTECA Font Awesome DE ICONOS-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <!-- TIPOGRAFIA de GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>  
+  <!-- Cuerpo del documento -->
+
+        <header>
+          <!-- Encabezado principal del sitio -->
+
+            <nav>
+              <!-- Menú de navegación principal -->
+              <ul class="nav-lista">
+              <!-- Lista desordenada para los enlaces del menú -->
+
+                <a href="#login-modal" class="login-link">Iniciar sesión</a>
+                <!-- Enlace que apunta al modal de inicio de sesión (abre al hacer clic gracias al uso de "id") -->
+
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">¿Quiénes somos?</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              </ul>
+            </nav>
+          </header>
+
+          <!-- Contenedor del modal. Se muestra cuando se hace clic en el enlace con href="#login-modal" -->
+          <div id="login-modal" class="modal">
+            
+            <div class="modal-contenido">
+            <!-- Caja interior que contiene el contenido del formulario -->
+
+              <a href="#" class="cerrar">×</a>
+              <!-- Enlace que “cierra” el modal al regresar a la parte superior de la página -->
+
+              <h2>Iniciar sesión</h2>
+              <form> <!-- Campos de entrada obligatorios para email y contraseña -->
+                <input type="email" placeholder="Su email" required>
+                <input type="password" placeholder="Contraseña" required>
+          
+                <button type="submit">Ingresar</button> <!-- Botón para enviar el formulario -->
+          
+                <div class="extra-links"> <!-- Enlaces adicionales bajo el botón -->
+                  <a href="#">Crear cuenta</a>
+                  <a href="#">Recuperar contraseña</a>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <main class="seccion-principal">
+            <!-- Contenido principal de la página -->
+
+            <div class="contenido">
+              <!-- Caja contenedora de contenido principal -->
+              <h1>¡Bienvenidos a Alma Mia!</h1>
+              <!-- Título principal -->
+              <p>Descubrí productos artesanales hechos con amor, vas a encontrar detalles únicos para regalar o regalarte.🌿</p> 
+              <!-- Párrafo introductorio -->
+            </div>
+          </main>
+</body>
+  
+</html>

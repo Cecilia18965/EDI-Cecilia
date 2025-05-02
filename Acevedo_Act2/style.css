@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-size: cover;  /* Hace que cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-position: center -50px; /* Centrado, pero sube 50px la imagen */
+    background-attachment: fixed; /* La deja fija al hacer scroll */
+    margin: 0;
+    padding: 0;
+  }
+
+  body, html {
+    height: 100%;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .seccion-principal .contenido p {
+    font-family: "Raleway", sans-serif; /* Fuente tipografica */
+    font-size: 18px; /* Tamaño del texto */
+    color: #fff; /* Color del texto */
+  }
+  header {
+    background-color: #e1cfc3;
+    padding: 15px 0;
+  }
+  
+  .nav-lista {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  
+  .nav-lista a {
+    text-decoration: none;
+    color: #4e3e36;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .nav-lista a:hover {
+    color: #a67c52;
+  }
+  
+  .seccion-principal {
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  .contenido {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .contenido h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .contenido p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .seccion-principal {
+    background-image: url('img/fondo_princ.png');
+    width: 100%;
+    height: 91%;
+    background-size: cover;  /* Hace que cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-position: center; /*  Centra la imagen de fondo */
+    padding: 100px 0; /* espaciado vertical si lo necesitás */
+  }
+
+/* CONFIGURACION DEL BOTON FLOTANTE DE INICIO DE SESIÓN */
+
+ /* Fondo del modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+/* Mostrar cuando es el target */
+.modal:target {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caja del modal */
+.modal-contenido {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  width: 350px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  font-family: "Playfair Display", serif;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Botón cerrar */
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #c97b7b;
+  font-weight: bold;
+}
+
+/* Formulario */
+.modal-contenido form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-contenido input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.modal-contenido button {
+  background-color: #f3cfc9;
+  border: none;
+  padding: 12px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal-contenido button:hover {
+  background-color: #eabbb0;
+}
+
+.extra-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.extra-links a {
+  color: #b97074 !important;
+  text-decoration: none;
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+}

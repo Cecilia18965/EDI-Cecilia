@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 40px;
+}
+
+.format-1 {
+    position: relative;
+    cursor: pointer;
+    border: solid 1px #0b0442;
+    padding: 2px 5px;
+    background: #fff;
+    color: #0b0442;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.format-1::after{
+    content: "";
+    position: absolute;
+    left: -105%;
+    top: -1px;
+    width: 105%;
+    height: 105%;
+    background: #084586;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.format-1:hover {
+    color: white;
+    background: #0b0442;
+}
+
+.format-1:hover::after {
+    left: -1px;
+}
+
+.format-2 {
+    position: relative;
+    cursor: pointer;
+    border: solid 1px #0b0442;
+    padding: 2px 5px;
+    background: #fff;
+    color: #0b0442;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.format-2::after{
+    content: "";
+    position: absolute;
+    right: -105%;
+    top: -1px;
+    width: 105%;
+    height: 105%;
+    background: #084586;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.format-2:hover {
+    color: white;
+    background: #6958e9;
+}
+
+.format-2:hover::after {
+    right: -1px;
+}
+
+.format-3 {
+    position: relative;
+    cursor: pointer;
+    border: solid 1px #0b0442;
+    padding: 2px 5px;
+    background: #fff;
+    color: #0b0442;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.format-3::after{
+    content: "";
+    position: absolute;
+    left: -150%;
+    top: -1px;
+    width: 150%;
+    height: 150%;
+    background: #1cdae0;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+    transform: rotate(-45deg);
+}
+
+.format-3:hover {
+    color: white;
+    background: #6958e9;
+}
+
+.format-3:hover::after {
+    left: -200%;
+    width: 400%;
+    height: 400%;
+}
+
+.format-4 {
+    position: relative;
+    cursor: pointer;
+    border: solid 1px #0b0442;
+    padding: 2px 5px;
+    background: #fff;
+    color: #0b0442;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.format-4::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0%;
+    border-radius: 50%;
+    background: #084586;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.format-4:hover {
+    color: white;
+}
+
+.format-4:hover::after {
+    left: -80px;
+    top: -50%;
+    width: 300%;
+    height: 300%;
+    background: #0b0442;
+}
+
+.format-5 {
+    position: relative;
+    cursor: pointer;
+    border: solid 1px #0b0442;
+    padding: 2px 5px;
+    background: #fff;
+    color: #0b0442;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.format-5::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -1px;
+    transform: transition(-50%);
+    width: 0;
+    height: 120px;
+    background: #084586;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.format-5:hover {
+    color: white;
+}
+
+.format-5:hover::after {
+    width: 105%;
+}

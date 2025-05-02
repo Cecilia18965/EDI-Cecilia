@@ -5,10 +5,10 @@
 }
 
 body {
-    display: flex;
+    display: flex; /*para que sea flexible*/
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; /*Alto Minimo*/
     background: #1a252c;
 }
 .container {
@@ -16,22 +16,39 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform-style: preserve-3d;
+    transform-style: preserve-3d; /*para que haga un giro en 3D*/
 }
 
 .container .box {
     position: relative;
     width: 120px;
     height: 120px;
-    transition: 0.5s;
-    cursor: pointer;
+    cursor: pointer; /*Es para que cambie el puntero del mouse al pasar por encima de la imagen*/
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0002); /*reflejo de contenido*/
+    transition: 0.5s; 
 }
 
 .container .box  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    position: absolute; /* El elemento no depende de nada, y toma la posición que le doy en la configuración del box*/ 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* que la imagen se adapte a la medida del contenedor */
+}
+
+.container:hover > .box:not(:hover){
+    margin: 0 -20px;
+    filter: drop-shadow(0 0 25px #000); /*Permite poner sombra*/
+    transform: perspective(500px) rotateY(45deg) scale(0.95);
+
+}
+
+.container .box:hover ~ .box {
+    transform: perspective(500px) rotateY(-45deg) scale(0.95);
+}
+
+.container .box:hover {
+    transform: perspective(500px) rotateY(0) scale(1.5);
+    z-index: 1000;
 }
