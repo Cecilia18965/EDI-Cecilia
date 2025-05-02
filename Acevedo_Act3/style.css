@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 40px;
+}
+
+/* Botón con sombra */
+.btn-shadow {
+    padding: 10px 20px;
+    background-color: #e67e22;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+  }
+  
+  .btn-shadow:hover {
+    transform: translateY(-2px);
+  }
+
+  /* Botón con ícono */
+
+  .btn-icon {
+    padding: 10px 20px;
+    background-color: #8cc4c4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .btn-icon:hover {
+    transform: scale(1.05);
+  }
+
+  /* Botón con borde Neón*/
+  .btn-neon {
+    padding: 12px 24px;
+    background: black;
+    cursor: pointer;
+    color: rgb(255, 23, 236);
+    border: 2px solid rgb(255, 23, 236);
+    border-radius: 5px;
+    text-shadow: 0 0 5px rgb(255, 23, 236);
+    box-shadow: 0 0 5px rgb(255, 23, 236);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-neon:hover {
+    box-shadow: 0 0 15px rgb(255, 23, 236), 0 0 30px rgb(255, 23, 236);
+  }
+
+    /* Botón con borde Neón*/
+
+    .btn-typing {
+        padding: 10px 25px;
+        background-color: #34495e;
+        cursor: pointer;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: monospace;
+      }
+      
+      .btn-typing span {
+        display: inline-block;
+        animation: typing 3s steps(20, end) infinite;
+      }
+      
+      @keyframes typing {
+        0% { width: 0 }
+        100% { width: 100% }
+      }
+
+   /* Botón con animación de "onda"*/
+      .btn-wave {
+        padding: 12px 30px;
+        background-color: #1abc9c;
+        cursor: pointer;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .btn-wave::after {
+        content: "";
+        position: absolute;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+        transition: transform 0.5s, opacity 1s;
+      }
+      
+      .btn-wave:active::after {
+        transform: translate(-50%, -50%) scale(2);
+        opacity: 1;
+        transition: 0s;
+      }
