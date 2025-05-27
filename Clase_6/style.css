@@ -174,3 +174,52 @@ body{
 .format-5:hover::after {
     width: 105%;
 }
+
+.project-section {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.project-card {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.project-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.project-card h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.project-card p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.btn-gear {
+  background-color: #6f42c1; /* violeta */
+  color: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-gear:hover {
+  background-color: #5a32a3;
+}
+
+.dropdown-menu {
+  background-color: #f4effa;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
